@@ -1,0 +1,23 @@
+g++ -o deneme  main.cpp
+
+Bu komutun ayrıntılı açıklaması şöyledir:
+
+g++: C++ kodunu derlemek için kullanılan GCC derleyicisinin C++ arayüzüdür.
+-o: Çıktı dosyasının ismini belirler. Bu durumda, deneme adlı bir dosya oluşturulacak.
+deneme: Oluşturulacak çalıştırılabilir dosyanın adıdır.
+main.cpp: Derlenecek C++ kaynak kodu dosyasının adıdır.
+Bu komut, main.cpp dosyasındaki C++ kodunu derleyerek deneme adlı bir çalıştırılabilir dosya oluşturur. Bu dosya, ./deneme komutuyla çalıştırılabilir.
+
+Bu program, bir bağlı liste oluşturmak için kullanılan basit bir C++ kodudur. Programın başında bir düğüm yapısı (Node struct) tanımlanmıştır. Bu düğüm yapısı, veri depolamak ve bir sonraki düğümü göstermek için iki değişkene sahiptir. Sonrasında, bir tane baş düğümü (head) oluşturulur ve bu baş düğümü ilk önce nullptr (boş) olarak ayarlanır.
+
+Programda, üç temel işlev tanımlanmıştır: Add (ekeleme), Display (gösterme) ve Insert (ekleme).
+
+Add fonksiyonu, yeni bir düğüm oluşturur ve bu düğümü listenin sonuna ekler. Eğer liste boş ise, yeni düğüm baş düğümü olur. Eğer liste dolu ise, yeni düğüm son düğüm olur.
+
+Display fonksiyonu, listenin tüm elemanlarını baştan sona doğru gösterir. Eğer liste boş ise, "The list is empty." (Liste boş) yazdırılır.
+
+Insert fonksiyonu, belirli bir indise (index) yeni bir eleman ekler. Eğer liste boş ise, yeni düğüm baş düğümü olur. Eğer index 0 ise, yeni düğüm baş düğümüne eklenir. Aksi takdirde, yeni düğüm belirli indise eklenir.
+
+Ana programda, kullanıcıya bir dizi seçenek sunulur: bir eleman ekleme, listenin tüm elemanlarını gösterme, programdan çıkma, eleman ekleme. Kullanıcının seçimine göre, ilgili işlev çağırılır.
+
+Bu program, basit bir bağlı liste yapısını anlamak için iyi bir örnektir.
